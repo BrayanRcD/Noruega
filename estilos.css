@@ -1,0 +1,235 @@
+/* Paleta de colores */
+:root {
+    --rojo-bandera: #BA0C2F;
+    --azul-bandera: #00205B;
+    --blanco: #FFFFFF;
+    --verde-paisaje: #2E8B57;
+    --aurora: #6EE7B7;
+}
+
+/* Estilos generales */
+body {
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: var(--blanco);
+    color: #333;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    body { font-size: 0.875rem; }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+    body { font-size: 1rem; }
+}
+@media (min-width: 1201px) {
+    body { font-size: 1.25rem; }
+}
+
+/* Header */
+header {
+    background-color: var(--azul-bandera);
+    color: var(--blanco);
+    padding: 1rem 0;
+    width: 100%;
+}
+header h1 {
+    margin: 0 0 0rem 0;
+    font-size:5rem;
+}
+header h1:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Navegación */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: var(--verde-paisaje);
+}
+.bandera {
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Selector de idioma */
+.idioma {
+    margin-top: -2rem;
+    margin-right: 1rem;
+    text-align: right;     
+    width: auto;          
+    display: flex;       
+    justify-content: flex-end;
+}
+
+.idioma select {
+    padding: 0.3rem;
+    width: 120px;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: var(--blanco);
+}
+.hero img {
+    width: 100%;
+    height: auto;
+}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.5);
+    padding: 1rem;
+    border-radius: 8px;
+}
+.hero-text h2 {
+    color: var(--rojo-bandera);
+}
+.button.primary {
+    background-color: var(--rojo-bandera);
+    color: var(--blanco);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+.button.primary:hover {
+    background-color: var(--verde-paisaje);
+}
+<section class="hero">
+  <div id="slider">
+    <img src="imagenes/aurora.jpg" alt="Aurora boreal">
+    <img src="imagenes/festival musica.jpg" alt="Festival de música">
+    <img src="imagenes/baile noruega.jpg" alt="Desfile noruego">
+  </div>
+  <div class="hero-text">
+    <h2>Descubre la cultura y tradición</h2>
+    <p>Explora los festivales más representativos de Noruega y planifica tu viaje con información clara.</p>
+    <a href="#festivales" class="button primary">Ver festivales</a>
+  </div>
+</section>
+
+
+/* Secciones */
+section {
+    padding: 2rem;
+}
+h2 {
+    color: var(--azul-bandera);
+    margin-bottom: 1rem;
+}
+h3 {
+    color: var(--rojo-bandera);
+    margin-top: 1rem;
+}
+p {
+    line-height: 1.6;
+    margin: 1rem auto;
+    max-width: 1000px;
+}
+#festivales img {
+    max-width: 90%;
+    height: auto;
+    margin: 1rem auto;
+}
+
+/* Glosario */
+#glosario h2 {
+    margin-bottom: 2rem;
+}
+#glosario ul {
+    list-style: none;
+    padding: 0;
+}
+#glosario li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+/* Footer */
+footer {
+    background-color: var(--azul-bandera);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+#slider {
+  position: relative;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+#slider .slides {
+  display: flex;
+  transition: transform 1s ease; /* animación suave */
+}
+
+#slider img {
+  width: 100%;
+  flex-shrink: 0;
+}
+/* Dropdown idioma */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: var(--azul-bandera);
+  color: var(--blanco);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: var(--blanco);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdown-content li {
+  color: var(--azul-bandera);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.dropdown-content li:hover {
+  background-color: var(--rojo-bandera);
+  color: var(--blanco);
+}
+
+/* Mostrar menú al pasar el mouse */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
