@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Festivales de Noruega</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites/dist/css/foundation.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="grid-container text-center">
+      <h1>Festivales de Noruega</h1>
+      <nav>
+        <img src="imagenes/bandera.png" alt="Bandera de Noruega" class="bandera">
+        <ul class="menu align-center">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#festivales">Festivales</a></li>
+          <li><a href="#glosario">Glosario</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>   
+ <div class="idioma">
+  <div class="dropdown">
+    <button class="dropbtn">Idioma ▼</button>
+    <ul class="dropdown-content">
+      <li data-lang="es">Español</li>
+      <li data-lang="en">English</li>
+    </ul>
+  </div>
+</div>
+
+  </header>
+
+  <!-- Sección principal -->
+  <main id="inicio">
+    <section class="hero">
+ <div id="slider">
+  <div class="slides">
+    <img src="imagenes/slider1.png" alt="slider1">
+    <img src="imagenes/slider3.jpg" alt="slider3">
+    <img src="imagenes/slider4.jpg" alt="slider4">
+    <img src="imagenes/slider5.jpg" alt="slider5">
+  </div>
+  <div class="hero-text">
+    <h2>Descubre la cultura y tradición</h2>
+    <p>Explora los festivales más representativos de Noruega y planifica tu viaje con información clara.</p>
+    <a href="#festivales" class="button primary">Ver festivales</a>
+  </div>
+</section>
+    <section id="festivales" class="grid-container">
+      <h2 class="text-center">Festivales destacados</h2>
+      <article>
+        <h3>Syttende Mai</h3>
+        <p>El <strong>Syttende Mai</strong>, celebrado cada 17 de mayo, es el Día Nacional de Noruega. 
+        Conmemora la firma de la Constitución en 1814 y es una de las celebraciones más importantes del país. 
+        Las calles se llenan de desfiles escolares, bandas de música y personas vestidas con el <em>bunad</em>, 
+        el traje tradicional noruego. Es un día de orgullo nacional, donde se mezclan la historia, la cultura 
+        y la alegría colectiva.</p>
+        <img src="imagenes/bailenoruega.jpg" alt="Desfile del Syttende Mai en Oslo">
+      </article>
+      <article>
+        <h3>Festival de Música de Bergen</h3>
+        <p>El <strong>Festival Internacional de Música de Bergen</strong> es uno de los eventos culturales más 
+        prestigiosos de Noruega. Fundado en 1953, reúne a artistas de todo el mundo en conciertos de música 
+        clásica, ópera, jazz y contemporánea.</p>
+        <img src="imagenes/festivalmusica.jpg" alt="Concierto en el Festival de Música de Bergen">
+      </article>
+    </section>
+
+    <section id="glosario" class="grid-container">
+      <h2 class="text-center">Glosario básico en Noruego</h2>
+      <div class="grid-x grid-padding-x">
+        <div class="cell small-12 medium-6">
+          <ul class="menu vertical">
+            <li><strong>Hei</strong> – Hola</li>
+            <li><strong>Takk</strong> – Gracias</li>
+            <li><strong>Festival</strong> – Festival</li>
+            <li><strong>God morgen</strong> – Buenos días</li>
+            <li><strong>God kveld</strong> – Buenas noches</li>
+            <li><strong>Velkommen</strong> – Bienvenido</li>
+          </ul>
+        </div>
+        <div class="cell small-12 medium-6">
+          <ul class="menu vertical">
+            <li><strong>Mat</strong> – Comida</li>
+            <li><strong>Musikk</strong> – Música</li>
+            <li><strong>Dans</strong> – Danza</li>
+            <li><strong>Kultur</strong> – Cultura</li>
+            <li><strong>Tradisjon</strong> – Tradición</li>
+            <li><strong>By</strong> – Ciudad</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer id="contacto">
+    <div class="grid-container text-center">
+      <p>&copy; 2026 Festivales de Noruega | Brayan Ricardo Castellanos Daza</p>
+      <p>Ingeniería Multimedia - UNAD</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites/dist/js/foundation.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
